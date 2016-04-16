@@ -1,0 +1,32 @@
+<head>
+  <title>Class Feedback Form</title>
+</head>
+
+<body>
+  <h1 style="color:blue">Remember, feedback is an important tool for all of us to succeed. </h1>
+
+
+<button> Submit </button>
+
+<br>
+<br>
+{{>userInputs}}
+{{>userOutputs}}
+
+
+</body>
+
+<template name= "userInputs">
+    <form class="new-task">
+        <input type="text" name="text" placeholder="We appreciate your feedback. Write it here" />
+      </form>
+  </template>
+
+<template name="userOutputs">
+
+  <center> <h1> We gathered everyone's thoughts below: </h1> </center>
+
+</template>
+
+
+
