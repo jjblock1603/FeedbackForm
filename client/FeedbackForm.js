@@ -13,10 +13,18 @@
       createdAt: new Date(), // current time
     });
 
-  console.log ("The value of user feedback is", UserInputFeedback)
-
     // Clear form
     target.text.value = '';
   },
 });
+
+    var userOutputDictionary=  {
+      firstDictionary: function() {
+        console.log ("Test Time");
+        return UserInputFeedback.find();}}
+
+
+
+ Template.userOutputs.helpers(userOutputDictionary)
+
 

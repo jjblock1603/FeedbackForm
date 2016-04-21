@@ -25,7 +25,11 @@
 
 <template name="userOutputs">
 
-  <center> <h1> We gathered everyone's thoughts below: </h1> </center>
+  <center> <h1> We gathered everyone's thoughts below</h1> </center>
+
+    {{#each firstDictionary}}
+  <p>{{text}} was created at {{createdAt}}</p>
+    {{/each}}
 
 </template>
 
